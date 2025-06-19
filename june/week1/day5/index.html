@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <nav class="flex p-4 text-lg shadow-xl backdrop-blur-xs fixed w-screen">
+        <div class="w-[70%] font-bold text-lg ms-5"> Nav <span class="text-blue-700">Logo</span></div>
+        <div class="w-[30%]">
+            <ul class="flex justify-evenly">
+                <li class="transition transition-700 hover:text-red-900 cursor-pointer">Home</li>
+                <li class="hover:text-blue-900 cursor-pointer">Contacts</li>
+                <li class="hover:text-blue-900 cursor-pointer">About us</li>
+                <li class="hover:text-blue-900 cursor-pointer px-3 text-semibold bg-sky-700 rounded text-white hover:text-white h-[30px] ">Login</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="login-container flex justify-center items-center h-screen">
+      <form action="" class="border-1 rounded pt-[5rem] pb-4 px-6 w-[20rem] xl:w-[25%]">
+        <h3 class="text-4xl font-semibold text-center mb-4 text-blue-700">Login Form</h3>
+        <div class="input-field">
+          <label for="name" class="block font-medium ms-1 text-xl mb-2">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter ur name"
+            class="border-1 rounded mb-2 ps-2 w-full h-10"
+          />
+        </div>
+        <div class="input-field">
+          <label for="age" class="block font-medium ms-1 text-xl mb-2">Age</label>
+          <input
+            type="text"
+            id="age"
+            placeholder="Enter ur age"
+            class="border-1 rounded mb-2 ps-2 w-full h-10"
+          />
+        </div>
+        <div class="input-field">
+          <label for="phone" class="block font-medium ms-1 text-xl mb-2">Phone no</label>
+          <input
+            type="text"
+            id="phone"
+            placeholder="Enter ur phone"
+            class="border-1 rounded mb-2 ps-2 w-full h-10"
+          />
+        </div>
+        <div
+          class="submit-button bg-green-200 p-4 w-full font-semibold rounded-4xl mt-2 text-center text-xl mb-4"
+        >
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

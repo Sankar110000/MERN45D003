@@ -1,0 +1,36 @@
+.grid-container{
+    width: 400px;
+    height: 300px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 10px;
+    gap: 5px;
+}
+
+.box{
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#side{
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#content1{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
