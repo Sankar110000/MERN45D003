@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="w-full">
+    <div id="alert" class="hidden absolute left-50% top-10 bg-sky-400 text-2xl w-[30rem] text-center border rounded-lg py-4 mx-[30%]">Alert</div>
+    <div class="w-screen h-screen flex justify-center items-center">
+      <div id="login-container" class="hidden p-4 border rounded scale-150">
+        <h1 class="text-2xl text-center">Login</h1>
+        <div>
+          <label for="">Username</label>
+          <br />
+          <input type="text" class="login-input border rounded text-xl mb-4" />
+        </div>
+        <div>
+          <label for="">Password</label>
+          <br />
+          <input type="text" class="login-input text-xl border rounded mb-4" />
+        </div>
+        <button class="p-2 w-full bg-sky-400 rounded" id="login-button">
+          Login
+        </button>
+        <br />
+        <a
+          class="text-sky-900 font-bold mt-4 underline w-full inline-block text-center"
+          id="signup-link"
+          >Singup</a
+        >
+      </div>
+      <div id="signup-container" class="p-4 border rounded scale-150">
+        <h1 class="text-2xl text-center">Singup</h1>
+        <div>
+          <label for="">Username</label>
+          <br />
+          <input type="text" class="singup-input border rounded text-xl mb-4" />
+        </div>
+        <div>
+          <label for="">Phone</label>
+          <br />
+          <input type="text" class="singup-input text-xl border rounded mb-4" />
+        </div>
+        <div>
+          <label for="">Email</label>
+          <br />
+          <input type="text" class="singup-input text-xl border rounded mb-4" />
+        </div>
+        <div>
+          <label for="">Password</label>
+          <br />
+          <input type="text" class="singup-input text-xl border rounded mb-4" />
+        </div>
+        <button class="p-2 w-full bg-sky-400 rounded" id="singup-button">
+          Signup
+        </button>
+        <br />
+        <a
+          class="text-sky-900 font-bold mt-4 underline w-full inline-block text-center"
+          id="login-link"
+          >Login</a
+        >
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
