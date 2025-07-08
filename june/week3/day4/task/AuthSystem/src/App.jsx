@@ -21,7 +21,7 @@ function App() {
     <div>
       {isLoggedIn ? (
         <div>
-          <h3>Yu are logged in</h3>
+          <h2 style={{marginBottom: "2rem"}}>You are logged in</h2>
           <button onClick={handleLogout}>Logout</button>
         </div>
       ) : (
